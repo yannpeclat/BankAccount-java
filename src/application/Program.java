@@ -62,7 +62,7 @@ public class Program {
 					return; // Sai do programa
 
 				default:
-					System.out.println("Invalid option! Bye Bye!");
+					System.out.println("Invalid option! Try again..");
 					break;
 			}
 		}

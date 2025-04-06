@@ -1,48 +1,31 @@
-# 🏦 BankAccount-java
+# 💰 BankAccount-java
 
-Este projeto simula um sistema simples de **conta bancária** com funcionalidades como criação de conta, saque, depósito e atualização de saldo. Desenvolvido em Java como parte da minha jornada no **Curso Java Completo** do professor **Nélio Alves (Udemy)**.
+Projeto simples em Java para gerenciamento de contas bancárias com operações de **depósito**, **saque** e **exibição de saldo**, utilizando **POO**, **listas**, encapsulamento e verificação de ID duplicado.
 
-> 🔧 Projeto em evolução contínua conforme avanço nos estudos de Java.
-
----
-
-## 🚀 Funcionalidades
-
-- Criação de conta com ou sem depósito inicial
-- Depósito de valores
-- Saque com taxa fixa
-- Encapsulamento dos dados da conta (POO)
-- Validação de entrada e saída de dados
-- Uso de construtores e métodos personalizados
-- Aplicação de boas práticas com `toString`, getters/setters
+> Projeto evoluído com base no curso [Java COMPLETO Programação Orientada a Objetos + Projetos](https://www.udemy.com/course/java-curso-completo/) do Nélio Alves (Seção 12 concluída ✅)
 
 ---
 
-## 📚 Conceitos Utilizados
+## 🧠 Conceitos aplicados
 
 - Programação Orientada a Objetos (POO)
-- Classes e Métodos
-- Construtores
-- Encapsulamento (`private`, `get`, `set`)
-- Sobrescrita do método `toString`
-- Scanner e entrada de dados via terminal
-- Estrutura básica de projetos Java com pacotes `Application` e `entities`
+- Encapsulamento e métodos `get`/`set`
+- Construtores com e sem parâmetros
+- Listas (`List<BankAccount>`)
+- Uso de `Stream` para busca e verificação
+- Scanner para entrada de dados
+- Validação de ID duplicado
+- Estrutura de pacotes organizados
 
 ---
 
-## 📁 Estrutura do Projeto
+## 💡 Funcionalidades
 
-BankAccount-java/
-├── src/ │
-├── Application/ │ │
-└── Program.java
-// Executável principal │
-└── entities/ │
-└── Account.java // Classe que representa a conta bancária
-├── bin/
-└── README.md // Este arquivo
-
---
+- Registro de múltiplas contas
+- Verificação de ID duplicado
+- Saque com taxa de R$5.00
+- Depósito com valor definido pelo usuário
+- Exibição de todas as contas com ID, titular e saldo formatado
 
 ## 🧠 Próximas Melhorias (Conforme Progresso no Curso)
 
@@ -54,6 +37,32 @@ BankAccount-java/
 - Adicionar tratamentos de erro com `try-catch`
 
 ---
+
+## 🚀 Como executar
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/yannpeclat/BankAccount-java.git
+   ```
+2. Compile os arquivos:
+   javac -d bin src/\*_/_.java
+3. Execute o programa:
+   java -cp bin application.Program
+
+## 📁 Estrutura do Projeto
+
+BankAccount-java/
+├── src/
+│ ├── application/
+│ │ └── Program.java
+│ └── entities/
+│ └── BankAccount.java
+├── .gitignore
+└── README.md
+
+## 🌎 English Summary
+
+Simple Java project that simulates a basic bank account system with support for deposit, withdrawal, and balance display, using OOP and Java Streams for ID management.
 
 ## 📌 Acesse este projeto no GitHub
 
