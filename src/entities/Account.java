@@ -4,26 +4,26 @@ import java.util.Scanner;
 
 public class Account {
 
-	private int number;
+	private int id;
 	private String holder;
 	private double balance;
 
 	public Account() {
 	}
 
-	public Account(int number, String holder) {
-		this.number = number;
+	public Account(int id, String holder) {
+		this.id = id;
 		this.holder = holder;
 	}
 
-	public Account(int number, String holder, double initialDeposit) {
-		this.number = number;
+	public Account(int id, String holder, double initialDeposit) {
+		this.id = id;
 		this.holder = holder;
 		deposit(initialDeposit);
 	}
 
-	public int getNumber() {
-		return number;
+	public int getId() {
+		return id;
 	}
 
 	public String getHolder() {
@@ -46,7 +46,7 @@ public class Account {
 			String accountNumberInput = sc.nextLine();
 
 			if (isValidAccountNumber(accountNumberInput)) {
-				this.number = Integer.parseInt(accountNumberInput);
+				this.id = Integer.parseInt(accountNumberInput);
 				validAccountNumber = true; // Se for válido, sai do loop
 			} else {
 				System.out.println("Invalid account number! It must be exactly 6 digits.");
@@ -66,12 +66,8 @@ public class Account {
 		balance -= amount + 5.0;
 	}
 
+	@Override
 	public String toString() {
-		return "Account "
-				+ number
-				+ ", Holder: "
-				+ holder
-				+ ", Balance: $ "
-				+ String.format("%.2f", balance);
+		return "Conta " + id + ", Titular: " + holder + ", Saldo: R$ " + String.format("%.2f", balance);
 	}
 }
