@@ -1,18 +1,68 @@
-## Getting Started
+# 🏦 BankAccount-java
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Este projeto simula um sistema simples de **conta bancária** com funcionalidades como criação de conta, saque, depósito e atualização de saldo. Desenvolvido em Java como parte da minha jornada no **Curso Java Completo** do professor **Nélio Alves (Udemy)**.
 
-## Folder Structure
+> 🔧 Projeto em evolução contínua conforme avanço nos estudos de Java.
 
-The workspace contains two folders by default, where:
+---
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## 🚀 Funcionalidades
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+- Criação de conta com ou sem depósito inicial
+- Depósito de valores
+- Saque com taxa fixa
+- Encapsulamento dos dados da conta (POO)
+- Validação de entrada e saída de dados
+- Uso de construtores e métodos personalizados
+- Aplicação de boas práticas com `toString`, getters/setters
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+---
 
-## Dependency Management
+## 📚 Conceitos Utilizados
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+- Programação Orientada a Objetos (POO)
+- Classes e Métodos
+- Construtores
+- Encapsulamento (`private`, `get`, `set`)
+- Sobrescrita do método `toString`
+- Scanner e entrada de dados via terminal
+- Estrutura básica de projetos Java com pacotes `Application` e `entities`
+
+---
+
+## 📁 Estrutura do Projeto
+
+BankAccount-java/
+├── src/ │
+├── Application/ │ │
+└── Program.java
+// Executável principal │
+└── entities/ │
+└── Account.java // Classe que representa a conta bancária
+├── bin/
+└── README.md // Este arquivo
+
+--
+
+## 🧠 Próximas Melhorias (Conforme Progresso no Curso)
+
+- Implementar **listas de contas** (`List`)
+- Buscar contas por ID e aplicar regras de negócio
+- Permitir múltiplas contas em um sistema bancário
+- Criar menus interativos com loops
+- Dividir responsabilidades (camadas)
+- Adicionar tratamentos de erro com `try-catch`
+
+---
+
+## 📌 Acesse este projeto no GitHub
+
+🔗 [https://github.com/yannpeclat/BankAccount-java](https://github.com/yannpeclat/BankAccount-java)
+
+---
+
+## 💡 Sobre mim
+
+Desenvolvedor em formação, apaixonado por backend e arquitetura de software. Estou construindo um portfólio sólido com projetos reais e evolutivos em Java.
+
+Feito com 💻 e ☕ por [Yann Peclat](https://github.com/yannpeclat)
